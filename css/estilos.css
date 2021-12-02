@@ -3,16 +3,14 @@
   font-family: "Inconsolata";
   src: url(../fonts/inconsolata.ttf);
 }
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Bold.ttf);
-}
+
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   font-family: "Inconsolata";
+  
 }
 img {
   display: block;
@@ -242,6 +240,8 @@ title {
   background: #151515;
   color: white;
   padding: 30px 20px;
+  content: normal;
+
 }
 .footer__title{
   border-bottom: 1px dotted #555;
@@ -263,7 +263,28 @@ title {
   display: block;
   padding: 20px;
   border: 1px solid #555;
+  margin-bottom: 10px;
+  color: #ccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
+
+
+.button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #151515;
+  border: 1px solid #555;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background: cadetblue;
+}
+
 .copy {
   color: #555;
 }
@@ -407,4 +428,33 @@ title {
   .product__img {
     height: 200px;
   }
+}
+
+
+
+
+/* ? SHOPPING CART */
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
 }
