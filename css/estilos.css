@@ -30,6 +30,7 @@ title {
   margin: 10px 0;
   color: #454546;
   font-family: "Poppins";
+  
 }
 .main-header__container{
   display: flex;
@@ -105,6 +106,11 @@ title {
   padding: 0 20px;
 }
 
+.phone{
+  font-size: 20px;
+  align-content: center;
+
+}
 /* ESTILOS DE SLIDER */
 .container-slider{
   margin: 50px 0;
@@ -436,15 +442,16 @@ title {
 /* ? SHOPPING CART */
 .shopping-cart-items {
   padding: 20px 0px;
+  
 }
 
 .shopping-cart-header {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 5px solid #ccc;
 }
 
 .shopping-cart-image {
-  max-width: 80px;
-  border-radius: 20px;
+  max-width: 150px;
+  border-radius:  20px;
 }
 
 .shopping-cart-quantity-input {
@@ -457,4 +464,14 @@ title {
 
 .shopping-cart-total {
   min-height: 96px;
+}
+
+
+.Carrito{
+background-color: #bfdbf7;
+margin: 50px;
+padding: 15px;
+border: 2px solid #454546; 
+font-family: "Inconsolata";
+color: #FF4E00;
 }
