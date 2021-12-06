@@ -242,6 +242,33 @@ title {
   color: white;
 }
 
+/* Going Up Button*/
+
+.GUP{
+  width: 60px;
+  height: 60px;
+  background-color: #469d89;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  color: wheat;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
+  transform: scale(0);
+}
+
+
+.GUP :hover{
+transform: scale(1.5);
+border-color: rgba(0,0,0,0.1);
+}
+
 .main-footer{
   background: #151515;
   color: white;
@@ -468,10 +495,10 @@ title {
 
 
 .Carrito{
-background-color: #bfdbf7;
+background-color: #DDA15E;
 margin: 50px;
 padding: 15px;
 border: 2px solid #454546; 
 font-family: "Inconsolata";
-color: #FF4E00;
+color: #386641;
 }

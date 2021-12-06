@@ -116,3 +116,25 @@ function comprarButtonClicked() {
   shoppingCartItemsContainer.innerHTML = '';
   updateShoppingCartTotal();
 }
+
+//scroll
+document.getElementById("GUP").addEventListener("click", scrollUp);
+
+function scrollUp(){
+
+var ScrollNow = document.documentElement.scrollTop;
+if (ScrollNow > 0 ) {
+  window.requestAnimationFrame(scrollUp);
+  window.scrollTo(0,ScrollNow -  (ScrollNow / 15));
+}
+}
+
+BUP = document.getElementById("GUP");
+window.onscroll = function(){
+  var Scroll = document.documentElement.scrollTop;
+  if (Scroll > 100) {
+    BUP.style.transform = "scale(1)";
+  }else if (Scroll < 500 ) {
+    BUP.style.transform = "scale(0)";
+  }
+}
