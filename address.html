@@ -1,3 +1,4 @@
+<!--  -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -63,7 +64,7 @@
             </div>
 
              <div class="input-contenedor">
-                <i class="fas fa-map-marker-alt icon"></i>
+                <i class="fas fa-map-marker icon"></i>
                  <input type="text" placeholder="Colonia" id="Col" name="Colonia" required="true">
          </div>
 
@@ -74,22 +75,22 @@
      </div>
 
      <div class="input-contenedor">
-        <i class="fas fa-map-marker-alt icon"></i>
+        <i class="fas fa-bars icon"></i>
          <input type="text" placeholder="Entre calle" id="BCalle" name="BCalle" required="false">
  </div>
 
  <div class="input-contenedor">
-    <i class="fas fa-map-marker-alt icon"></i>
+    <i class="fas fa-bars icon"></i>
      <input type="text" placeholder="Y calle" id="YCalle" name="YCalle" required="false">
 </div>
 
 <div class="input-contenedor">
-    <i class="fas fa-map-marker-alt icon"></i>
+    <i class="fas fa-door-closed icon"></i>
      <input type="text" placeholder="Numero Exterior" id="NEXT" name="NEXT" required="false">
 </div>
 
 <div class="input-contenedor">
-    <i class="fas fa-map-marker-alt icon"></i>
+    <i class="fas fa-door-open icon"></i>
      <input type="text" placeholder="Numero Interior" id="NINT" name="NINT" required="false">
 </div>
 
@@ -99,11 +100,41 @@
 </div>
 
 <br/>
-         <input type="submit" value="Enviar" class="button">
+      
+         
+         <section class="shopping-cart" id="Cart">
+            <div class="container">
+         <input
+         class="btn btn-success ml-auto button"
+         type="submit"
+         data-toggle="modal"
+         data-target="#comprarModal"
+         value="Enviar"
+       >
          
 
+    
+       <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="comprarModalLabel"> Gracias Por Su Compra</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+          
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+               </div>
 
-     
+           </div>
+       </div>
+   </div>
+
+</div>
+</section>
      
     </form>
 

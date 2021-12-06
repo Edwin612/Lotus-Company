@@ -1,3 +1,4 @@
+<!-- Esta es la vista del usuario no registrado -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +23,6 @@
     />
   </head>
   <body>
-
     <header class="main-header" id="Home">
       <div class="container container--flex">
         <div class="main-header__container">
@@ -47,8 +47,7 @@
         <div class="main-header__container">
           <span class="main-header__txt">NECESITA AYUDA?</span>
           <p class="main-header__txt phone">
-            <i class="fas fa-phone "></i> LLAME AL 
-            963-135-5648
+            <i class="fas fa-phone"></i> LLAME AL 963-135-5648
           </p>
         </div>
         <div class="main-header__container">
@@ -62,7 +61,39 @@
             type="search"
             class="main-header__input"
             placeholder="Mi planta favorita"
-          /><i class="fas fa-search"></i>
+            list="suggestion"
+          />
+          <datalist id="suggestion">
+            <option>Cromatella</option>
+            <option>Golden</option>
+            <option>Colorado</option>
+            <option>Lindsy Wood</option>
+            <option>Princesa Elizabeth</option>
+            <option>Wanviza</option>
+            <option>Anturio</option>
+            <option>Ceropegia Woodii</option>
+            <option>Cinta</option>
+            <option>Clivia</option>
+            <option>Pata de Elefante</option>
+            <option>Sansevieria</option>
+            <option>Violeta Africana</option>
+            <option>Adenium</option>
+            <option>Áster</option>
+            <option>Crisantemo</option>
+            <option>Gazania</option>
+            <option>Glicina</option>
+            <option>Pensamiento</option>
+            <option>Amapola de Agua</option>
+            <option>Calas</option>
+            <option>Caltha Palustris</option>
+            <option>Camalote</option>
+            <option>Espina de Agua</option>
+            <option>Jacinto de Agua</option>
+            <option>Pistia</option>
+
+            <option>Adenium</option>
+          </datalist>
+          <i class="fas fa-search"></i>
         </div>
       </div>
     </header>
@@ -529,10 +560,10 @@
 
     <br />
 
-    <!-- START SECTION SHOPPING CART -->
+    <!-- Comienza Carrito de Compras -->
     <section class="shopping-cart Carrito" id="Cart">
       <div class="container">
-        <h1 class="text-center ">CARRITO</h1>
+        <h1 class="text-center">CARRITO</h1>
         <hr />
         <div class="row">
           <div class="col-6">
@@ -551,11 +582,11 @@
             </div>
           </div>
         </div>
-        <!-- ? START SHOPPING CART ITEMS -->
+        <!-- ? Esta wea no la borres -->
         <div class="shopping-cart-items shoppingCartItemsContainer"></div>
-        <!-- ? END SHOPPING CART ITEMS -->
+   
 
-        <!-- START TOTAL -->
+        <!-- Esto es para que saque el total -->
         <div class="row">
           <div class="col-12">
             <div class="shopping-cart-total d-flex align-items-center">
@@ -594,43 +625,56 @@
               >
                 Comprar
               </button>
-
-              
             </div>
           </div>
         </div>
 
-        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal fade"
+          id="comprarModal"
+          tabindex="-1"
+          aria-labelledby="comprarModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="comprarModalLabel"> Usted Debe estar Registrado para hacer esta compra</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                  <a href="signin.html">  <button>Registrarse</button>
-                  </a>
-                    
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
+              <div class="modal-header">
+                <h5 class="modal-title" id="comprarModalLabel">
+                  Usted Debe estar Registrado para hacer esta compra
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <a href="signin.html">
+                  <button class="GT">Registrarse</button>
+                </a>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cerrar
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-
       </div>
     </section>
 
     <script src="js/slider.js"></script>
-<div class="GUP" id="GUP"> 
-  <i class="fa-solid fa-angles-up"></i>
-</div>
-    
+    <div class="GUP" id="GUP">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
 
     <footer class="main-footer">
       <div class="footer__section" id="About">

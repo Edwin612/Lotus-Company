@@ -81,37 +81,37 @@ body {
   
   /* ? SHOPPING CART */
 .shopping-cart-items {
-    padding: 20px 0px;
-    
-  }
+  padding: 20px 0px;
   
-  .shopping-cart-header {
-    border-bottom: 5px solid #ccc;
-  }
-  
-  .shopping-cart-image {
-    max-width: 150px;
-    border-radius:  20px;
-  }
-  
-  .shopping-cart-quantity-input {
-    max-width: 45px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background: #eee;
-    padding: 5px;
-  }
-  
-  .shopping-cart-total {
-    min-height: 96px;
-  }
-  
-  
-  .Carrito{
-  background-color: #DDA15E;
-  margin: 50px;
-  padding: 15px;
-  border: 2px solid #454546; 
-  font-family: "Inconsolata";
-  color: #386641;
-  }
+}
+
+.shopping-cart-header {
+  border-bottom: 5px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 150px;
+  border-radius:  20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+
+
+.comprarButton{
+background-color: #DDA15E;
+margin: 50px;
+padding: 15px;
+border: 2px solid #454546; 
+font-family: "Inconsolata";
+color: #386641;
+}
