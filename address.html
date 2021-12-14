@@ -14,10 +14,16 @@
     />
 	<link rel="stylesheet" href="css/address.css">
 	
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+  emailjs.init("user_ePBcQrMPu1Zz6GLC6CtgI");
+  })();
+  </script>
 
 </head>  
 <body>
- <form class="formulario">
+ <form class="formulario"  method="post">
     
     <h1>Datos de Envio</h1>
      <div class="contenedor">
@@ -26,19 +32,19 @@
      </div>
      <div class="input-contenedor">
          <i class="fas fa-user icon"></i>
-         <input type="text" placeholder="Nombre(s)" id="nombre" name="nombre" required="true">
+         <input type="text" placeholder="Nombre(s)" id="nombre" name="nombre" required="true" class="nombre">
          
          </div>
 
          <div class="input-contenedor">
             <i class="fas fa-user icon"></i>
-            <input type="text" placeholder="Apellido(s)" id="apellido" name="apellido" required="true">
+            <input type="text" placeholder="Apellido(s)" id="apellido" name="apellido" class="apellido" required="true">
             
             </div>
          
          <div class="input-contenedor">
          <i class="fas fa-envelope icon"></i>
-         <input type="email" placeholder="Correo Electronico" id="mail" name="mail" required="true">
+         <input type="email" placeholder="Correo Electronico" id="mail" name="mail" class="mail" required="true">
          
          </div>
 
@@ -49,92 +55,59 @@
 
          <div class="input-contenedor">
             <i class="fas fa-map icon" ></i>
-            <input type="text" placeholder="Estado" id="estado" name="estado" required="true">
+            <input type="text" placeholder="Estado" id="estado" name="estado" class="estado" required="true">
             
             </div>
          
          <div class="input-contenedor">
             <i class="fas fa-city icon"></i>
-         <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad" required="true">
+         <input type="text" placeholder="Ciudad" id="ciudad" name="ciudad" class="ciudad" required="true">
         </div>
 
          <div class="input-contenedor">
             <i class="fab fa-usps icon"></i>
-             <input type="text" placeholder="Codigo Postal" id="cp" name="cp" required="true">
+             <input type="text" placeholder="Codigo Postal" id="cp" name="cp" class="cp" required="true">
             </div>
 
              <div class="input-contenedor">
                 <i class="fas fa-map-marker icon"></i>
-                 <input type="text" placeholder="Colonia" id="Col" name="Colonia" required="true">
+                 <input type="text" placeholder="Colonia" id="Col" name="Colonia" class="Colonia" required="true">
          </div>
 
 
          <div class="input-contenedor">
             <i class="fas fa-map-marker-alt icon"></i>
-             <input type="text" placeholder="Calle" id="Calle" name="Calle" required="true">
+             <input type="text" placeholder="Calle" id="Calle" name="Calle" class="Calle" required="true">
      </div>
 
      <div class="input-contenedor">
         <i class="fas fa-bars icon"></i>
-         <input type="text" placeholder="Entre calle" id="BCalle" name="BCalle" required="false">
+         <input type="text" placeholder="Entre calle" id="BCalle" name="BCalle" class="BCalle" required="false">
  </div>
 
  <div class="input-contenedor">
     <i class="fas fa-bars icon"></i>
-     <input type="text" placeholder="Y calle" id="YCalle" name="YCalle" required="false">
+     <input type="text" placeholder="Y calle" id="YCalle" name="YCalle" class="YCalle" required="false">
 </div>
 
 <div class="input-contenedor">
     <i class="fas fa-door-closed icon"></i>
-     <input type="text" placeholder="Numero Exterior" id="NEXT" name="NEXT" required="false">
+     <input type="text" placeholder="Numero Exterior" id="NEXT" name="NEXT" class="NEXT" required="false">
 </div>
 
 <div class="input-contenedor">
     <i class="fas fa-door-open icon"></i>
-     <input type="text" placeholder="Numero Interior" id="NINT" name="NINT" required="false">
+     <input type="text" placeholder="Numero Interior" id="NINT" name="NINT" class="NINT" required="false">
 </div>
 
 <div>
     
-     <textarea id="Ref" name="Ref" required="false" rows="10" cols="50"> Puede poner referencias aqui mismo</textarea>
+     <textarea id="Ref" name="facha" class="facha" required="false" rows="10" cols="50"> Puede poner referencias aqui mismo</textarea>
 </div>
 
 <br/>
       
-         
-         <section class="shopping-cart" id="Cart">
-            <div class="container">
-         <input
-         class="btn btn-success ml-auto button"
-         type="submit"
-         data-toggle="modal"
-         data-target="#comprarModal"
-         value="Enviar"
-       >
-         
-
-    
-       <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-       aria-hidden="true">
-       <div class="modal-dialog modal-dialog-centered">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h5 class="modal-title" id="comprarModalLabel"> Gracias Por Su Compra</h5>
-                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                       <span aria-hidden="true">&times;</span>
-                   </button>
-               </div>
-          
-               <div class="modal-footer">
-                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-               </div>
-
-           </div>
-       </div>
-   </div>
-
-</div>
-</section>
+<input type="submit" value="Enviar" class="button" name="go" />
      
     </form>
 
@@ -155,5 +128,119 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"
   ></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function () {
+    emailjs.init("user_ePBcQrMPu1Zz6GLC6CtgI");
+  })();
+</script>
+
+
+<!-- Sweet Alert JS-->
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+  /**
+   User ID        user_ePBcQrMPu1Zz6GLC6CtgI
+   Access Token   eb19d6c4b1cf9bcf20b4626bd68d3e6b 
+    
+    **/
+
+  function validate(){
+    let nombre = document.querySelector(".nombre")
+    let apellido = document.querySelector(".apellido")
+    let mail = document.querySelector(".mail")
+    let ciudad = document.querySelector(".ciudad")
+    let estado = document.querySelector(".estado")
+    let cp = document.querySelector(".cp")
+    let Colonia = document.querySelector(".Colonia")
+    let Calle = document.querySelector(".Calle")
+    let BCalle = document.querySelector(".BCalle")
+    let YCalle = document.querySelector(".YCalle")
+    let NEXT = document.querySelector(".NEXT")
+    let NINT = document.querySelector(".NINT")
+    let facha = document.querySelector(".facha")
+    let go = document.querySelector(".button");
+
+      go.addEventListener("click", (e)=>{
+        e.preventDefault()
+        if(nombre.value == "" || apellido.value == "" || mail.value == "" ||
+        ciudad.value == "" || estado.value == "" || cp.value == "" || Colonia.value == "" ||
+        Calle.value == "" || BCalle.value == "" || YCalle.value == "" ||
+        NEXT.value == "" || NINT.value == "" || facha.value == "" || go.value == "" ){
+          vacio();
+        }
+        else{
+          sendmail(nombre.value,  apellido.value, mail.value,
+        ciudad.value, estado.value,  cp.value, Colonia.value,
+        Calle.value, BCalle.value, YCalle.value,
+        NEXT.value, NINT.value, facha.value)
+          success();
+
+        }
+      })
+  }
+validate()
+
+    function sendmail(nombre, apellido, mail, ciudad, estado, cp,
+    Colonia, Calle, BCalle, YCalle, NEXT, NINT, facha){
+          emailjs.send("gmail","template_qtth0kn",{
+                      Name: nombre,
+                      City: ciudad,
+                      State: estado,
+                      NBH: Colonia,
+                      PC: cp,
+                      ST: Calle,
+                      BWN: BCalle,
+                      BHN: YCalle,
+                      OUT: NEXT,
+                      IN: NINT,
+                      LN: apellido,
+                      Glance: facha,
+                      LTR: mail,
+
+});
+    }
+    
+
+   function success(){
+      swal({
+      title: "Compra Realizada",
+      text: "Por favor, revise su correo",
+      icon: "success",
+      button: "Cerrar",
+    });
+   }
+   
+
+   function failure(){
+      swal({
+      title: "No se ha podido procesar la compra",
+      text: "Por favor, revise el formulario",
+      icon: "error",
+      button: "Ta'bien",
+    });
+   }
+   
+
+   function vacio(){
+      swal({
+      title: "Alto Alli Rufian",
+      text: "Parece que has olvidado llenar el formulario",
+      icon: "error",
+      button: "Oh! Mi lente de contacto. Jajio Jajio Jajio",
+    });
+   }
+
+
+
+</script>
+
+<script src="js/tienda.js"></script>
+
 </body>
 </html>

@@ -51,9 +51,7 @@
           </p>
         </div>
         <div class="main-header__container">
-          <a href="loginvista.html" class="main-header__link"
-            ><i class="fas fa-user"></i
-          ></a>
+
           <a href="#Cart" class="main-header__btn"
             >CARRITO<i class="fas fa-shopping-cart"></i
           ></a>
@@ -629,6 +627,8 @@
           </div>
         </div>
 
+
+
         <div
           class="modal fade"
           id="comprarModal"
@@ -640,7 +640,8 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="comprarModalLabel">
-                  Usted Debe estar Registrado para hacer esta compra
+                  Haga click en el boton para 
+                  llenar sus datos de envio
                 </h5>
                 <button
                   type="button"
@@ -651,11 +652,13 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
+
               <div class="modal-body">
-                <a href="signin.html">
-                  <button class="GT">Registrarse</button>
+                <a href="address.html">
+                  <button class="GT">Ir al Formulario</button>
                 </a>
               </div>
+
               <div class="modal-footer">
                 <button
                   type="button"
@@ -668,6 +671,9 @@
             </div>
           </div>
         </div>
+
+
+
       </div>
     </section>
 
@@ -732,5 +738,11 @@
     ></script>
 
     <script src="js/tienda.js"></script>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_ePBcQrMPu1Zz6GLC6CtgI')
+</script>
   </body>
 </html>

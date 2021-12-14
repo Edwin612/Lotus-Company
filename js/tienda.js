@@ -1,3 +1,5 @@
+
+
 const addToShoppingCartButtons = document.querySelectorAll(".addToCart");
 addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener("click", addToCartClicked);
@@ -137,3 +139,6 @@ window.onscroll = function () {
     BUP.style.transform = "scale(0)";
   }
 };
+
+
+emailjs.init('user_ePBcQrMPu1Zz6GLC6CtgI')
